@@ -10,3 +10,16 @@ $color__lighter_gray: #dee0df;
 
 // Fonts //
 $font-family-base: 'Source Sans Pro', sans-serif;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+        xs: 0,
+  // Small screen / phone
+        sm: 49em,
+  // Medium screen / tablet
+        md: 48em,
+  // Large screen / desktop
+        lg: 62em,
+  // Extra large screen / wide desktop
+        xl: 75em
+) !default;

@@ -21,16 +21,18 @@
 </head>
 <body class="@yield('body-class', 'docs') language-php">
 
-<nav class="navbar navbar-fixed-top">
+<span class="overlay"></span>
+
+<nav class="navbar">
     <div class="container ">
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar">
+        <button class="toggle-slide menu-link btn btn-primary hidden-sm-up pull-right" type="button">
             &#9776;
         </button>
-        <div class="collapse navbar-toggleable-xs" id="navbar">
-            <a class="navbar-brand" href="/">
-                <img src="/img/laravel-doctrine-logo.png" height="30" alt="Laravel Doctrine logo">
-                Laravel Doctrine
-            </a>
+        <a class="navbar-brand" href="/">
+            <img src="/img/laravel-doctrine-logo.png" height="30" alt="Laravel Doctrine logo">
+            Laravel Doctrine
+        </a>
+        <div class="collapse navbar-toggleable-xs">
             <ul class="nav navbar-nav pull-right">
                 @include('partials.main-nav')
             </ul>
@@ -39,16 +41,34 @@
 </nav>
 
 <main class="wrapper">
+
+    <nav id="slide-menu" class="slide-menu" role="navigation">
+
+        <div class="brand">
+            <a href="/">
+                <img src="/img/laravel-doctrine-logo.png" height="50">
+            </a>
+        </div>
+
+        <ul class="slide-main-nav">
+            <li><a href="/">Home</a></li>
+            @include('partials.main-nav')
+        </ul>
+
+        @yield('sidebar')
+
+    </nav>
+
     @yield('content')
 </main>
 
 <footer class="footer">
     <div class="container">
         <nav class="nav">
-            <a class="nav-link" href="/docs/orm">ORM</a>
-            <a class="nav-link" href="/docs/extensions">Extensions</a>
-            <a class="nav-link" href="/docs/migrations">Migrations</a>
-            <a class="nav-link" href="/docs/acl">ACL</a>
+            <a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'orm']) }}">ORM</a>
+            <a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'extensions']) }}">Extensions</a>
+            <a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'migrations']) }}">Migrations</a>
+            <a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'acl']) }}">ACL</a>
         </nav>
         <p>
             <a href="/">laraveldoctrine.org</a> is based on

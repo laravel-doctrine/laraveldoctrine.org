@@ -19,7 +19,10 @@ elixir(function (mix) {
         'vendor/bootstrap/dist/js/bootstrap.js',
         'vendor/prism/prism.js',
         'vendor/prism/components/prism-php.js',
-        'vendor/prism/plugins/line-numbers/prism-line-numbers.js'
+        'vendor/prism/plugins/line-numbers/prism-line-numbers.js',
+        'vendor/scotchPanels/dist/scotchPanels.js',
+        'js/Sidebar.js',
+        'js/app.js'
     ], elixir.config.publicPath + '/' + elixir.config.js.outputFolder + '/scripts.js', elixir.config.assetsPath);
 
     mix.version([

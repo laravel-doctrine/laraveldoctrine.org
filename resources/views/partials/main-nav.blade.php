@@ -1,7 +1,7 @@
-<li class="nav-item"><a class="nav-link" href="/docs/orm">ORM</a></li>
-<li class="nav-item"><a class="nav-link" href="/docs/extensions">Extensions</a></li>
-<li class="nav-item"><a class="nav-link" href="/docs/migrations">Migrations</a></li>
-<li class="nav-item"><a class="nav-link" href="/docs/acl">ACL</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'orm']) }}">ORM</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'extensions']) }}">Extensions</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'migrations']) }}">Migrations</a></li>
+<li class="nav-item"><a class="nav-link" href="{{ route('docs.index', ['version' => $version, 'package' => 'acl']) }}">ACL</a></li>
 
 <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community</a>

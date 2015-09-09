@@ -6,12 +6,13 @@
 }
 
 .navbar-brand {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   color: #484848;
 
   > img {
     display: inline-block;
+    margin-top: -8px;
   }
 }
 
@@ -24,4 +25,8 @@
       color: $brand-primary;
     }
   }
+}
+
+.toggle-slide {
+  margin-top: 18px;
 }

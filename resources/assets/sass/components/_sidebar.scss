@@ -1,0 +1,48 @@
+.sidebar {
+  border-right: 1px solid $color__faint;
+  width: 250px;
+  float: left;
+  padding: 35px;
+  > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    > li {
+      font-size: 18px;
+      font-weight: 400;
+      padding: 0 0 10px;
+      margin: 25px 0 0px;
+      > ul {
+        border-top: 1px dashed rgba(0, 0, 0, .1);
+        display: block;
+        list-style: none;
+        margin: 10px 0 0 0;
+        padding: 10px 0 0 0;
+        font-size: 14px;
+      }
+    }
+  }
+  a {
+    line-height: 1.5;
+    &:hover {
+      color: darken($brand-primary, 10%);
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .sidebar {
+    padding: 25px;
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 780px) {
+
+  .sidebar {
+    display: none;
+  }
+
+}

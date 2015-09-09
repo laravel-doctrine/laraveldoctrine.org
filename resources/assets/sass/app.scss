@@ -12,6 +12,11 @@
 @import "components/panels";
 @import "components/nav";
 @import "components/footer";
+@import "components/sidebar";
+@import "components/slide-menu";
 
 // Core
 @import "core/base";
+
+// Content
+@import "content/docs";

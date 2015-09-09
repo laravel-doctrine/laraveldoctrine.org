@@ -15,3 +15,13 @@ $app->get('/', [
     'as'   => 'home',
     'uses' => 'HomeController@show'
 ]);
+
+$app->get('docs/{version}/{package}', [
+    'as'   => 'docs.index',
+    'uses' => 'DocsController@index'
+]);
+
+$app->get('docs/{version}/{package}/{page}', [
+    'as'   => 'docs.show',
+    'uses' => 'DocsController@show'
+]);
