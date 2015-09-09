@@ -1,3 +1,7 @@
 /vendor
 .env
 /node_modules
+.idea
+.php_cs.cache
+public/css
+public/js
