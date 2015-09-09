@@ -1,0 +1,61 @@
+.panel {
+  position: relative;
+  padding: 0 20px;
+
+  h1 {
+    text-align: center;
+  }
+
+  &.statement {
+    display: table;
+    table-layout: fixed;
+    height: 100vh;
+    min-height: 900px;
+    margin: 0 0 0 0;
+    width: 100%;
+    text-align: center;
+
+    .content {
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%;
+      padding-bottom: 150px;
+
+      img {
+        margin-bottom: 30px;
+      }
+    }
+
+    h1 {
+      font-size: 28px;
+      color: $gray;
+    }
+
+    .browser-window {
+      display: block;
+      margin: 8vh auto 15px;
+    }
+  }
+
+  .browser-window,
+  .terminal-window {
+    overflow: hidden;
+    pre[class*="language-"], .window-content {
+      overflow: hidden;
+    }
+  }
+
+}
+
+@media (max-width: 760px) {
+  .panel.statement h1 {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 620px) {
+  .panel.statement .browser-window {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "LaravelDoctrine.org",
+  "version": "1.0.0",
+  "authors": [
+    "Laravel-Doctrine"
+  ],
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "/resources/assets/vendor"
+  ],
+  "dependencies": {
+    "bootstrap": "~4.0.0",
+    "prism": "~1.0.1"
+  }
+}

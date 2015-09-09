@@ -1,0 +1,27 @@
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #dee0df;
+  height: 97px;
+  border-top: 7px solid $brand-primary;
+}
+
+.navbar-brand {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #484848;
+
+  > img {
+    display: inline-block;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    color: #7b7b7b;
+    padding: 1.7rem 10px;
+
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}

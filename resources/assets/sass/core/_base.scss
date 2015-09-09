@@ -1,0 +1,58 @@
+body {
+  color: $gray;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  background: $body-bg;
+}
+
+h1, h2, h3, h4 {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 200;
+}
+
+p {
+  line-height: 1.5;
+  margin: 10px 0 20px;
+  strong {
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+p code {
+  background: $color__faint;
+  color: $brand-primary;
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+code, kbd, pre, samp {
+  font-family: source-code-pro, monospace;
+  font-size: 14px;
+}
+
+blockquote {
+  background: $brand-primary;
+  color: #fff;
+  border-radius: 3px;
+  margin: 10px 0 20px;
+  padding: 10px 15px;
+  p:last-child {
+    margin: 0;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.wrapper {
+  margin-top: 97px
+}

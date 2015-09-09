@@ -1,0 +1,45 @@
+footer.footer {
+  background: #fafafa;
+  padding: 35px 20px;
+  text-align: center;
+  nav {
+    margin: 25px auto 35px;
+
+    a {
+      font-size: 16px;
+      padding: 0 25px;
+      color: $color__gray;
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+
+  }
+  p {
+    color: $color__light_gray;
+    font-size: 16px;
+    margin-bottom: 10px;
+    a {
+      color: $color__light_gray;
+      &:hover {
+        color: $brand-primary;
+      }
+    }
+  }
+
+  p.less-significant a {
+    color: lighten(#AEAEAE, 10%);
+    font-size: 14px;
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+
+  footer.footer ul {
+    display: none;
+  }
+
+}
