@@ -3,6 +3,7 @@
 namespace LaravelDoctrine\Exceptions;
 
 use Exception;
+use Illuminate\Contracts\View\Factory;
 use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
@@ -15,6 +16,19 @@ class Handler extends ExceptionHandler
     protected $dontReport = [
         HttpException::class,
     ];
+
+    /**
+     * @var Factory
+     */
+    protected $view;
+
+    /**
+     * @param Factory $view
+     */
+    public function __construct(Factory $view)
+    {
+        $this->view = $view;
+    }
 
     /**
      * Report or log an exception.
@@ -39,6 +53,12 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
+        if ($e instanceof HttpException) {
+            if ($this->view->exists('errors.' . $e->getStatusCode())) {
+                return $this->view->make('errors.' . $e->getStatusCode(), ['request' => $request, 'exception' => $e]);
+            }
+        }
+
         return parent::render($request, $e);
     }
 }
