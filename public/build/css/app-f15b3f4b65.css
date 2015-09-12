@@ -5037,7 +5037,8 @@ pre.line-numbers > code {
   border-bottom: 1px solid #dee0df;
   height: 97px;
   border-top: 7px solid #755db9;
-  padding: 0.5rem 0rem; }
+  padding: 0.5rem 0rem;
+  border-radius: 0; }
 
 .navbar-brand {
   padding-top: 1.5rem;
