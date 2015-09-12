@@ -7,7 +7,7 @@ class GithubDocsRepository implements DocsRepository
     /**
      * @var string
      */
-    public $location = 'https://raw.githubusercontent.com/laravel-doctrine/docs';
+    protected $location = 'https://raw.githubusercontent.com/laravel-doctrine/docs';
 
     /**
      * @return string
@@ -60,7 +60,7 @@ class GithubDocsRepository implements DocsRepository
      */
     protected function getUrl($version, $package, $page)
     {
-        return $this->location . '/' . $version . '/' . $package . '/' . $page . '.md';
+        return $this->getLocation() . '/' . $version . '/' . $package . '/' . $page . '.md';
     }
 
     /**
@@ -75,5 +75,13 @@ class GithubDocsRepository implements DocsRepository
         $url = $this->getUrl($version, $package, $page);
 
         return (string) @file_get_contents($url);
+    }
+
+    /**
+     * @return mixed
+     */
+    protected function getLocation()
+    {
+        return env('DOCS_LOCATION', $this->location);
     }
 }
