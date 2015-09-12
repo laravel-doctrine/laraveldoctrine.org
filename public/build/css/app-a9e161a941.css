@@ -4953,6 +4953,10 @@ pre.line-numbers > code {
   .dark-code .token.entity {
     cursor: help; }
 
+table code, table pre {
+  word-break: break-word !important;
+  white-space: pre-line  !important; }
+
 .browser-window, .terminal-window {
   text-align: left;
   margin: 20px;

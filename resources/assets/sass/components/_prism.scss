@@ -311,3 +311,10 @@ pre.line-numbers > code {
     cursor: help;
   }
 }
+
+table {
+  code, pre {
+    word-break: break-word !important;
+    white-space: pre-line  !important;
+  }
+}
