@@ -10,6 +10,25 @@ class GithubDocsRepository implements DocsRepository
     public $location = 'https://raw.githubusercontent.com/laravel-doctrine/docs';
 
     /**
+     * @return string
+     */
+    public function getLatestVersion()
+    {
+        return 'master';
+    }
+
+    /**
+     * @return array
+     */
+    public function getVersions()
+    {
+        return [
+            'master',
+            //'1.0'
+        ];
+    }
+
+    /**
      * @param $version
      * @param $package
      * @param $page

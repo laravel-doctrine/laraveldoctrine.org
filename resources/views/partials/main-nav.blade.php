@@ -10,5 +10,3 @@
         <a class="dropdown-item" target="_blank" href="http://slack.laraveldoctrine.org">Slack</a>
     </ul>
 </li>
-
-@yield('versions')

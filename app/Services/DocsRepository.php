@@ -20,4 +20,14 @@ interface DocsRepository
      * @return array
      */
     public function getIndex($version, $package);
+
+    /**
+     * @return string
+     */
+    public function getLatestVersion();
+
+    /**
+     * @return array
+     */
+    public function getVersions();
 }

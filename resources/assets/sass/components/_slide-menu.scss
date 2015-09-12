@@ -4,6 +4,39 @@
   left: -70%;
   display: none;
 
+  .dropdown-menu {
+    display: block;
+    position: initial;
+    float: none;
+    background: none;
+    min-width: auto;
+    z-index: inherit;
+    font-size: inherit;
+    border: none;
+    border-radius: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0 0;
+    margin: 10px 0 0;
+  }
+
+  .dropdown-toggle {
+    display: none;
+  }
+
+  .dropdown-item {
+    padding: 0;
+    clear: initial;
+    font-weight: initial;
+    line-height: inherit;
+    white-space: inherit;
+    width: auto;
+
+    &:focus, &:hover {
+      background-color: transparent;
+    }
+
+  }
+
   h2 {
     color: #fff;
     font-weight: normal;
@@ -41,9 +74,6 @@
     padding: 25px 0;
     margin: 0;
     border-bottom: 1px solid rgba(255,255,255,.1);
-    a {
-      font-weight: bold;
-    }
   }
 
   a {

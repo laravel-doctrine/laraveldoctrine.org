@@ -3,6 +3,7 @@
   border-bottom: 1px solid #dee0df;
   height: 97px;
   border-top: 7px solid $brand-primary;
+  padding: 0.5rem 0rem;
 }
 
 .navbar-brand {
@@ -25,8 +26,22 @@
       color: $brand-primary;
     }
   }
+
+  .switcher {
+    margin-top: 17px;
+    margin-left: 20px;
+    .btn {
+      padding: 7px 12px;
+    }
+
+    .dropdown-menu {
+      min-width: auto;
+      text-align: center;
+    }
+  }
 }
 
 .toggle-slide {
   margin-top: 18px;
+  margin-left: 10px;
 }

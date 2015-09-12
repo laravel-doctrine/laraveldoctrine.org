@@ -41,6 +41,10 @@ class DocsController extends Controller
      */
     public function show($version, $package, $page)
     {
+        if ($version === 'current') {
+            $version = $this->repository->getLatestVersion();
+        }
+
         $content = $this->repository->findForVersion(
             $version,
             $package,
@@ -57,6 +61,7 @@ class DocsController extends Controller
         return view('docs', [
             'version' => $version,
             'package' => $package,
+            'page'    => $page,
             'title'   => $title,
             'content' => $content,
             'index'   => $index

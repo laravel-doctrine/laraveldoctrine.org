@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app['view']->composer(
-            'layouts.master',
+            '*',
             ShareVersionNumber::class
         );
     }

@@ -18,6 +18,22 @@ class VersionReplacer implements DocsRepository
     }
 
     /**
+     * @return string
+     */
+    public function getLatestVersion()
+    {
+        return $this->repository->getLatestVersion();
+    }
+
+    /**
+     * @return array
+     */
+    public function getVersions()
+    {
+        return $this->repository->getVersions();
+    }
+
+    /**
      * @param $version
      * @param $package
      * @param $page
