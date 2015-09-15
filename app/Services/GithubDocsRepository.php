@@ -78,10 +78,25 @@ class GithubDocsRepository implements DocsRepository
     }
 
     /**
+     * Prepend http:// to a  string if the string does not already contain it
+     *
+     * @param $url
+     * @return string
+     */
+    protected function addhttp($url)
+    {
+        if (!preg_match("~^(?:f|ht)tps?://~i", $url)) {
+            $url = "http://" . $url;
+        }
+
+        return $url;
+    }
+
+    /**
      * @return mixed
      */
     protected function getLocation()
     {
-        return env('DOCS_LOCATION', $this->location);
+        return $this->addHttp(env('DOCS_LOCATION', $this->location));
     }
 }
