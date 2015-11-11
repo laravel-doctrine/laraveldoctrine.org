@@ -5,3 +5,4 @@
 .php_cs.cache
 public/css
 public/js
+/docs
