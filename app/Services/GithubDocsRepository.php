@@ -14,7 +14,7 @@ class GithubDocsRepository implements DocsRepository
      */
     public function getLatestVersion()
     {
-        return '1.5';
+        return '1.4';
     }
 
     /**
@@ -23,7 +23,6 @@ class GithubDocsRepository implements DocsRepository
     public function getVersions()
     {
         return [
-            '1.5',
             '1.4',
             '1.3',
             '1.2',
