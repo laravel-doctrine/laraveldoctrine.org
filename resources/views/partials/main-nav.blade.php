@@ -15,6 +15,6 @@
         <h6 class="dropdown-header">Community packages</h6>
         <a class="dropdown-item" target="_blank" href="https://github.com/dave-redfern/laravel-doctrine-behaviours">Laravel Doctrine Behaviours</a>
         <a class="dropdown-item" target="_blank" href="https://github.com/bharley/laraveldoctrine-hashids">Hashids</a>
-        <a class="dropdown-item" target="_blank" href="https://github.com/maxbrokman/SafeQueue">SafeQueue</a>
+        <a class="dropdown-item" target="_blank" href="https://github.com/digbang/safe-queue">SafeQueue</a>
     </ul>
 </li>
