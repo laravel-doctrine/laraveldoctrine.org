@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    @parent - A drop-in Doctrine2 implementation for Laravel 5+
+    @parent - A drop-in Doctrine2 implementation for Laravel 6+
 @stop
 
 @section('content')
@@ -9,9 +9,9 @@
     <section class="panel statement light">
         <div class="content">
 
-            <img src="/img/laravel-doctrine-flow.png" alt="A drop-in Doctrine2 implementation for Laravel 5+">
+            <img src="/img/laravel-doctrine-flow.png" alt="A drop-in Doctrine2 implementation for Laravel 6+">
 
-            <h1>A drop-in Doctrine2 implementation for Laravel 5+</h1>
+            <h1>A drop-in Doctrine2 implementation for Laravel 6+</h1>
 
             <div class='browser-window'>
                 <div class='top-bar'>
