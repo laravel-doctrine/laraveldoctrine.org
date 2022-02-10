@@ -10,7 +10,7 @@
     <ul class="dropdown-menu" role="menu">
         <h6 class="dropdown-header">Join us on</h6>
         <a class="dropdown-item" target="_blank" href="https://github.com/laravel-doctrine">GitHub</a>
-        <a class="dropdown-item" target="_blank" href="http://slack.laraveldoctrine.org">Slack</a>
+        <a class="dropdown-item" target="_blank" href="https://gitter.im/laravel-doctrine/community">Gitter</a>
         <div class="dropdown-divider"></div>
         <h6 class="dropdown-header">Community packages</h6>
         <a class="dropdown-item" target="_blank" href="https://github.com/dave-redfern/laravel-doctrine-behaviours">Laravel Doctrine Behaviours</a>
